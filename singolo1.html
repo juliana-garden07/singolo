@@ -33,7 +33,7 @@
         </nav>
     </header>
     <div class="slider">
-        <div class="chev">
+        <button class="chev">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" width="16" height="27">
                 <defs>
                     <image width="16" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAMAAABC6v+QAAAAAXNSR0IB2cksfwAAAMlQTFRFykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJAVNDlAAAAEN0Uk5TAAJ7zshkof9QjJ+Jd4XGEnLUF3PYI9ckW/rnLFj86DVH9DZC8fND0+pL94/KMUHyPExc5l374iVu2dUWdZqLarmxUxKgJpYAAACrSURBVHicVdBXFoJADEDRiCL2rgiigr333nX/i1KSkMH83XfOQGYAZCJaNKZDaOLGbxLKSd9GSpxGG5nAWXIuzy6QiyV2mVypsnVyzWTXLbTdYDtNdKvNdj1yh93tofuDYIEhejSWDScYpuoKMwyeI2FuU1FnFvTVpSou/2clZW39bwKwobJVZbfHcjhKOdF9z6YUfpHLVcqNiqZWple+qwAPP7ihAM/X+wNfzR4Ol+GNQX8AAAAASUVORK5CYII="/>
@@ -45,14 +45,14 @@
                     <use id="chev" href="#img1" x="0" y="0" />
                 </g>
             </svg>
-        </div>
+        </button>
         <div class="phone-vertical">
             <div class="phone-base"></div>
             <div class="phone-cam">
                 <div class="red-dote"></div>
             </div>
             <div class="phone-speaker"></div>
-            <div class="phone-screen"></div>
+            <div class="phone-screen phone-screen-left"></div>
             <div class="phone-home-button">
                 <div class="phone-home-button-square"></div>
             </div>
@@ -63,23 +63,12 @@
                 <div class="red-dote"></div>
             </div>
             <div class="phone-speaker"></div>
-            <div class="phone-screen"></div>
-            <div class="phone-screen-image">
-                <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 330" width="184" height="330">
-                    <style>
-                        tspan { white-space:pre }
-                    </style>
-                    <g id="Slider">
-                        <g id="iPhone Horizontal">
-                        </g>
-                    </g>
-                </svg>
-            </div>
+            <div class="phone-screen phone-screen-right"></div>
             <div class="phone-home-button">
                 <div class="phone-home-button-square"></div>
             </div>
         </div>
-        <div class="chev chev-right">
+        <button class="chev chev-right">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 27" width="16" height="27">
                 <defs>
                     <image width="16" height="27" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAbCAMAAABC6v+QAAAAAXNSR0IB2cksfwAAAMlQTFRFykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJykVJAVNDlAAAAEN0Uk5TAGTIznsCUP+hn4x3iRLGhRfUciPYcyTXLOf6WzXo/Fg29EdD8/FCS+rTj/fKMfJBPEzmXCXi+13ZbhbVdZqLU7G5avMvjxEAAACpSURBVHicXdDnEoIwEEbRoCj23sCCYO+9d9//oZTd5INh/90zA9lECC0S1WPCn7jxn0QAkh4YKR/SBEYGkM2x5CGFIksJUq6wVCG1OosGaZgEVhPSapN0bEiXxXEhvT7JYAgZjUkm/spTghnadgjm+ILbXKhe8j9XstfyDHWq3MLaqN5y72TvD9THk7rrme96kX29hV5D575jw0fojYXr9VME5vX+fAP5A9UcDpb/bl14AAAAAElFTkSuQmCC"/>
@@ -91,7 +80,7 @@
                     <use id="chev" href="#img1" x="0" y="0" />
                 </g>
             </svg>
-        </div>
+        </button>
     </div>
     <div class="services">
         <h1 class="services-heading">Our Services</h1>
@@ -101,7 +90,7 @@
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         <div class="services-wrapper">
             <div class="services-cell">
-                <div class="services-icon">
+                <div class="services-icon-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" width="35" height="35">
                         <style>
                             tspan { white-space:pre }
@@ -125,7 +114,7 @@
                 </div>
             </div>
             <div class="services-cell">
-                <div class="services-icon">
+                <div class="services-icon-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 35" width="26" height="35">
                         <style>
                             tspan { white-space:pre }
@@ -149,8 +138,8 @@
                 </div>
             </div>
             <div class="services-cell">
-                <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 32" width="36" height="32">
+                <div class="services-icon-wrapper">
+                    <svg cxmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 32" width="36" height="32">
                         <style>
                             tspan { white-space:pre }
                             .shp0 { fill: #666d89 } 
@@ -173,7 +162,7 @@
                 </div>
             </div>
             <div class="services-cell">
-                <div class="services-icon">
+                <div class="services-icon-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 36" width="26" height="36">
                         <style>
                             tspan { white-space:pre }
@@ -197,7 +186,7 @@
                 </div>
             </div>
             <div class="services-cell">
-                <div class="services-icon">
+                <div class="services-icon-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 31" width="35" height="31">
                         <style>
                             tspan { white-space:pre }
@@ -221,7 +210,7 @@
                 </div>
             </div>
             <div class="services-cell">
-                <div class="services-icon">
+                <div class="services-icon-wrapper">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 34" width="36" height="34">
                         <style>
                             tspan { white-space:pre }

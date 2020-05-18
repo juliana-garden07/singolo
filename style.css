@@ -8,7 +8,6 @@ html {
 
 .header {
     height: 89px;
-    margin-left: 4px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
     display: flex;
@@ -20,7 +19,6 @@ html {
 .logo {
     margin: 34px 40px;
     font-size: 25px;
-    /* line-height: 6px; */
     color: #ffffff;
     font-family: "Lato-Bold";
     text-align: left;
@@ -35,7 +33,6 @@ html {
 .navbar {
     margin: 45px 41px 41px 0;
     width: 371px;
-    /* height: 9px; */
 }
 
 .navbar ul {
@@ -52,7 +49,6 @@ html {
 
 .navbar li a{
     font-size: 12px;
-    /* line-height: 9px; */
     font-family: "Lato-Bold";
     color: #fff;
     text-transform: uppercase;
@@ -64,7 +60,7 @@ html {
 }
 
 .navbar li a::before {
-    content: "\2022";
+    content: "\00B7";
     color: #494e62;
     display: inline-block;
     width: 15px;
@@ -79,7 +75,7 @@ html {
     border-bottom: 6px solid #ea676b;
     background-color: #f06c64;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     margin-top: -6px;
     z-index: 1;
@@ -87,34 +83,42 @@ html {
 
 .chev { 
     position: relative;
-    top:288px;
-    left: 42px;
+    width: 33px;
+    height: 33px;
+    background: #f06c64;
+    border: none;
+    top: 287px;
+    left: -29px;
 }
 
 .chev-right {
     transform: rotate(180deg);
     position: relative;
-    left: -45px;
-    top: -275px;
+    left: 29px;
 
 }
 
 .phone-vertical {
+    height: 458px;
+    width: 215px;
     position: relative;
-    top: 53px;
-    left: -232px;
+    top: 59px;
+    left: -113px
 }
 
 .phone-horizontal {
+    height: 458px;
+    width: 215px;
     transform: rotate(90deg);
     position: relative;
-    top: -100px;
-    left: -88px;
+    top: 87px;
+    left: -33px;
+    z-index: 1;
 }
 
 .phone-base{
-    height: 458px;
-    width: 215px;
+    height: 100%;
+    width: 100%;
     background: #f2f2f2;
     border-radius: 26px;
     position: absolute;
@@ -169,11 +173,12 @@ html {
     left: 11px;
 }
 
-.phone-screen-image {
-    position: absolute;
-    z-index: 3;
-    top: 65px;
-    left: 16px;
+.phone-screen-left {
+    background-image: url(images/Layer6.png);
+}
+
+.phone-screen-right {
+    background-image: url(images/Layer5.png);
 }
 
 .phone-home-button {
@@ -198,7 +203,7 @@ html {
 }
 
 .services {
-    height: 494px;
+    height: 360px;
     border-bottom: 6px solid #fff;
     background-color: #f2f2f2;
     padding: 67px 40px;
@@ -207,7 +212,8 @@ html {
 
 .services-heading {
     font-size: 30px;
-    line-height: 18px;
+    line-height: 23px;
+    margin: 0;
     color: #666d89;
     font-family: "Lato-Black";
     text-align: left;
@@ -215,37 +221,42 @@ html {
 
 .services-text {
     width: 939px;
-    height: 47px;
+    height: 58px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato-Light";
-    font-weight: 300;
     text-align: left;
-    margin-top: 33px;
+    margin: 26px 0 0 0;
 }
 
 .services-wrapper {
+    margin-top: 46px;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-gap: 36px 19px;
 }
 
 .services-cell {
     display: grid;
-    grid-template:  33px 54px / 120px 180px;
+    grid-template:  28px 59px / 80px 220px;
 }
 
-.services-icon {
+.services-icon-wrapper {
     width: 55px;
     height: 55px;
-    border-radius: 2px solid #666d89 50%;
+    border: 2px solid #666d89;
+    border-radius: 50%;
     grid-area: 1 / 1 / span 2 / span 1;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 .services-cell-heading {
     font-size: 18px;
     line-height: 18px;
+    margin: 0;
     color: #666d89;
     font-family: "Lato-Black";
     text-align: left;
@@ -255,6 +266,7 @@ html {
 .services-cell-text {
     font-size: 12px;
     line-height: 22px;
+    margin: 0;
     color: #767e9e;
     font-family: "Lato-Regular";
     text-align: left;
